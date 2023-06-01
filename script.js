@@ -50,8 +50,8 @@ else if (guess !== correctNumber){
 
     }
 }
-// else if (guess< correctNumber){
-//     if (score > 1){ 
+//    else if (guess< correctNumber){
+//    if (score > 1){ 
 //         document.querySelector(`.message`).textContent = `too low ❗❗❗`;
         
 //         score--,
@@ -75,7 +75,7 @@ function(){
   correctNumber= Math.trunc(Math.random()*20)+1;
 
   document.querySelector(`.message`).textContent = `Start guessing...`;
-  document.querySelector(`.number`).textContent=`?`
+  document.querySelector(`.question`).textContent=`?`
   document.querySelector(`.score`).textContent=score
   document.querySelector(`.guess`).value=``
 
