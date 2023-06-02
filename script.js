@@ -23,7 +23,7 @@ document.querySelector(`.check`).addEventListener(`click`, function () {
     document.querySelector(`.message`).textContent = `Correct number ❗❗❗`;
     document.querySelector(`body`).style.backgroundColor=`#f542da`;
     document.querySelector(`.number`).style.width=`30rem`;
-    document.querySelector(`.number`).textContent=correctNumber;
+    document.querySelector(`.question-mark`).textContent=correctNumber;
     document.querySelector(`.check`).style.display=`none`
     
 
@@ -75,7 +75,7 @@ function(){
   correctNumber= Math.trunc(Math.random()*20)+1;
 
   document.querySelector(`.message`).textContent = `Start guessing...`;
-  document.querySelector(`.question`).textContent=`?`
+  document.querySelector(`.question-mark`).textContent=`?`
   document.querySelector(`.score`).textContent=score
   document.querySelector(`.guess`).value=``
 
